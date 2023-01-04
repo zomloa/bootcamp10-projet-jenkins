@@ -77,6 +77,8 @@ pipeline {
         	docker { image 'franela/dind' }
 	}*/
 
+     agent any
+
         environment {
             HEROKU_API_KEY = credentials('heroku_api_key')
         }
